@@ -11,6 +11,16 @@ import java.io.Serializable;
  */
 public class Self implements Serializable {
 	
+	public Self(String ref) {
+		super();
+		this.ref = ref;
+	}
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 253262971032538215L;
+
 	public String getRef() {
 		return ref;
 	}

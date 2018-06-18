@@ -6,7 +6,7 @@ package com.travel.angular.model;
 import java.io.Serializable;
 
 /**
- * @author kirank1
+ * @author Kiran Kanaparthi
  *
  */
 public class Links implements Serializable {
@@ -25,5 +25,10 @@ public class Links implements Serializable {
 	}
 
 	private Self self;
+
+	public Links(Self self) {
+		super();
+		this.self = self;
+	}
 	
 }

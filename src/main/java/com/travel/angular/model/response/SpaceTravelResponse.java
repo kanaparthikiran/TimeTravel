@@ -23,6 +23,12 @@ public class SpaceTravelResponse implements Serializable {
 	private Integer price;
 	private Links  links;
 	
+	public SpaceTravelResponse(Integer shipNumber, Integer price) {
+		super();
+		this.shipNumber = shipNumber;
+		this.price = price;
+	}
+
 	/**
 	 * 
 	 * @param id
@@ -38,34 +44,38 @@ public class SpaceTravelResponse implements Serializable {
 		this.price = price;
 		this.links = links;
 	}
-	
+
 	public Long getId() {
 		return id;
 	}
+
 	public void setId(Long id) {
 		this.id = id;
 	}
+
 	public Integer getShipNumber() {
 		return shipNumber;
 	}
+
 	public void setShipNumber(Integer shipNumber) {
 		this.shipNumber = shipNumber;
 	}
+
 	public Integer getPrice() {
 		return price;
 	}
-	
 
-	
 	public void setPrice(Integer price) {
 		this.price = price;
 	}
+
 	public Links getLinks() {
 		return links;
 	}
+
 	public void setLinks(Links links) {
 		this.links = links;
 	}
-
-
+	
+	
 }
